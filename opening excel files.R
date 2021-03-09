@@ -1,0 +1,10 @@
+install.packages('readxl')
+
+library(readxl)
+y <- read_excel("C:/R/practice_project/r_practice/reservation_r_excel.xlsx")
+head(y)
+install.packages("writexl")
+library(writexl)
+write_xlsx(reservation_r_excel, "excel_output.xlsx")
+x<-read_excel("C:/R/practice_project/r_practice/reservation_r_excel.xlsx")
+str(x)
